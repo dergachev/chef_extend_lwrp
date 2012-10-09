@@ -7,7 +7,11 @@ Example cookbook showing how to use Ruby mixins to extend an LWRP provider from 
 ## Installation
 
 Clone this repository into your `CHEF-REPO/cookbooks/extend_lwrp`:
-    git clone git@github.com:dergachev/chef_extend_lwrp.git extend_lwrp # Be sure to name the cookbook "extend_lwrp", not "chef_extend_lwrp"
+
+```bash
+  # Be sure to name the cookbook "extend_lwrp", not "chef_extend_lwrp"
+  git clone git@github.com:dergachev/chef_extend_lwrp.git extend_lwrp 
+```
 
 ## Usage
 
@@ -53,10 +57,13 @@ Other background:
 * http://wiki.opscode.com/display/chef/Libraries (not as important here)
 * http://wiki.opscode.com/display/chef/Anatomy+of+a+Chef+Run
 * http://wiki.opscode.com/display/chef/Evaluate+and+Run+Resources+at+Compile+Time (see chef example below)
-    # the following is how to do static execution of resources
-    chef > recipe
-    chef:recipe >   p = package "netcat" do ; action :nothing ; end
-    chef:recipe >   p.run_action :install
+
+```ruby
+  # the following is how to do static execution of resources
+  chef > recipe
+  chef:recipe >   p = package "netcat" do ; action :nothing ; end
+  chef:recipe >   p.run_action :install
+```
 
 Discussions about LWRP subclassing:
 * http://community.opscode.com/search?query=subclass&scope=irc_log
