@@ -83,9 +83,13 @@ figured out how that's useful, since shef seems to only break outside resource d
 * http://www.vitarara.org/cms/ruby_metaprogamming_declaratively_adding_methods_to_a_class
 * http://blog.jayfields.com/2006/05/ruby-extend-and-include.html
 * http://railstips.org/blog/archives/2009/05/15/include-vs-extend-in-ruby/
+* http://stackoverflow.com/questions/5944278/overriding-method-by-another-defined-in-module
+  * Explains why `include(Modulname)` doesn't work for overriding existing instance methods
 
 ### Motivation
 
-making its fnichol/homesick.git/providers/castle.rb compatible with SSH agent forwarding inspired this gist
-see https://github.com/fnichol/chef-homesick : 
+This cookbook was written in the course of figuring out how to extend
+fnichol/chef-homesick to make it compatible with SSH agent forwarding.  
+See https://github.com/dergachev/chef_homesick_agent
+
 
