@@ -1,22 +1,22 @@
-# <a name="title"></a> extend_lwrp
+# extend_lwrp
 
-## <a name="description"></a> Description
+## Description
 
 Example cookbook showing how to use Ruby mixins to extend an LWRP provider from a recipe
 
-## <a name="installation"></a> Installation
+## Installation
 
 Clone this repository into your `CHEF-REPO/cookbooks/extend_lwrp`:
     git clone git@github.com:dergachev/chef_extend_lwrp.git extend_lwrp # Be sure to name the cookbook "extend_lwrp", not "chef_extend_lwrp"
 
-## <a name="usage"></a> Usage
+## Usage
 
 This cookbook defines a resource `greeting`, which outputs a log message with a greeting.
 Include `recipe[extend_lwrp::base]` to see the base `greeting` LWRP in action. 
 Include `recipe[extend_lwrp::overriden]` to see the overriden `greeting` lwrp in action.
 Look at the all the code to learn about how this was achieved.
 
-## <a name="how-it-works"></a> Trying it out with vagrant/shef
+## Trying it out with vagrant/shef
 
 Start shef in the vagrant vm:
 
@@ -39,7 +39,7 @@ Run the following in shef on vagrant:
   chef:recipe >   run_chef    # executes loaded resources; see that the overriden greeting is printed
 ```
 
-## <a name="resources"></a> Resources
+## Resources
 
 ### LWRP 
 
